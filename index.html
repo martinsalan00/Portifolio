@@ -5,32 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="menu">
-        <ul>
+    <nav class="navegacao">
+        <ul class="menu">
             <li>
-                <a href="#inicio">Início</a>
+                <a href="#inicio" class="menu-link">Início</a>
             </li>
             <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre" class="menu-link">Sobre</a>
             </li>
             <li>
-                <a href="#projetos">Projetos</a>
+                <a href="#projetos" class="menu-link">Projetos</a>
             </li>
             <li>
-                <a href="#contatos">Contatos</a>
+                <a href="#contatos" class="menu-link">Contatos</a>
             </li>
         </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
-        <div>
             <img src="./assets/foto-perfil.jpg" alt="Foto do Alan Martins" class="foto-perfil">
             <h1>Alan Martins</h1>
             <p>Desenvolvedor Front End | Desenvolvedor Full Stack</p>
-        </div>
     </main>
 
     <section id="sobre" class="sobre">
@@ -60,9 +59,42 @@
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
+
             <div class="projetos-card">
-                <img src="" alt="">
+                <img src="./assets/conversor-de-moedas.png" alt="imagem-conversor-de-moedas">
+                <h3 class="info-projetos">Conversor de Moedas Online</h3>
+                <p paragrafo-projetos>Este projeto é um conversor de moedas interativo que permite a conversão de moedas</p>
             </div>
+
+            <div class="projetos-card">
+                <img src="./assets/mario-bros.png" alt="imagem-conversor-de-moedas">
+                <h3 class="info-projetos">Mario Bros Services</h3>
+                <p paragrafo-projetos>Este projeto é uma reinterpretação criativa do clássico Mario Bros, transformando sua nostalgia em uma página de serviços interativa.</p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./assets/sorteador-de-numeros.png" alt="imagem-conversor-de-moedas">
+                <h3 class="info-projetos">Sorteador de Números Aleatórios</h3>
+                <p paragrafo-projetos>Sorteador de Números Aleatórios – Um Projeto Web Interativo</p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./assets/spotify-music.png" alt="imagem-conversor-de-moedas">
+                <h3 class="info-projetos">🎵 Plataforma de Streaming de Música 🎵</h3>
+                <p paragrafo-projetos>Este é um projeto de uma plataforma de streaming de música inspirada no Spotify</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <form class="formulario-contato" id="formulario"></form>
+         <div class="nome-form">  
+            <input placeholder="Nome" class="campo-form">
+        </div>
+        <div class="grupo-form">
+            <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
         </div>
     </section>
 </body>
