@@ -249,18 +249,65 @@ h1 {
     }
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container a img {
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.container a img:hover {
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
-    /* Esconder o menu padrão */
+    /* Garantir que o menu fique visível e os itens lado a lado */
     .menu {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: var(--escuro);
-        flex-direction: column;
-        width: 200px;
-        padding: 1rem;
-        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem;
     }
 
+    /* Estilizar os links do menu para ficarem alinhados lado a lado */
+    .menu-link {
+        text-decoration: none;
+        color: var(--claro);
+        font-weight: 500;
+        padding: 0.2rem 0.5rem;
+        transition: color 0.3s ease;
+        display: inline-block;
+    }
+
+    /* Efeito de hover para os links */
+    .menu-link:hover {
+        color: var(--primaria);
+    }
+
+    .cabecalho-sub-titulo {
+        text-align: center;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    .menu-link {
+        text-decoration: none;
+        color: var(--claro);
+        font-weight: 500;
+        padding: 0.1rem 0.05rem;
+        transition: color 0.3s ease;
+        display: inline-block;
+    }
+    h1 {
+        font-size: 50px;
+    }
 }
