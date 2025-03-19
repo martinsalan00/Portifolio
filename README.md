@@ -9,7 +9,7 @@ Este é o meu portfólio pessoal, onde apresento minha trajetória como desenvol
 - JavaScript
 - Responsividade para dispositivos móveis
 - Integração com WhatsApp
-- 
+  
 
 ## Funcionalidades
 - Menu de navegação fixo
